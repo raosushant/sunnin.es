@@ -1,0 +1,25 @@
+<div class="zipcode_entry">
+	<%= form_for(:sun) do |f| %>
+  	<%= f.text_field :zipcode, 
+			:class => "big_input", 
+			:placeholder => "Zipcode" %>
+  	<%= f.submit "find a sunny place", :class => 'btn btn-primary'%>
+	<% end %>
+	
+	<div id="cloudy-cites">
+		or choose  
+		<div > 
+			<%= link_to "Seattle, Washington", '', {:'data-zip' => '98101'} %> 
+		</div>
+		<div>  
+			<%= link_to "Buffalo, New York", '', {:'data-zip' => '14201'} %> 
+		</div> 
+		<div>  
+			<%= link_to "Pittsburgh, Pennsylvania", '', {:'data-zip' => '15201'} %> 
+		</div>	
+		<div>  
+			<%= link_to "San Francisco, California", '', {:'data-zip' => '94102'} %> 
+		</div>		
+	</div>
+	
+</div>

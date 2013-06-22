@@ -1,0 +1,53 @@
+<div class="center">
+	<div class="transbox">
+		<div class="left"> 
+			<div class="location-time"> 
+				<div class="city"> 
+					<%= "#{@w.location.city}, #{@w.location.state_abbr}" %> 
+				</div>
+				<div class="time"> 
+					<%= @w.sys_obs_time.strftime('%A %-I:%M %p') %> 
+				</div>
+				<div class="weather-desc"> 
+					<%= @w.weatherDesc %> 
+				</div>		
+			</div>
+
+			<div class="weather">
+				<div class="weather-icon"> 
+					<%= image_tag "weather_icons/#{@w.weather_icon}" %> 
+				</div>
+				<div class="weather-text"> 
+					<%= @w.temp_f %><span> &#176;F </span>|
+					<%= @w.temp_c %><span> &#176;C </span>					
+				</div>	
+			</div>
+
+			<div class="weather-other"> 
+				<div> 
+					<%= "Precipitation: #{@w.precipitation}%" %> 
+				</div>
+				<div> 
+					<%= "Humidity: #{@w.humidity}%" %> 
+				</div>
+				<div> 
+					<%= "Wind: #{@w.wind} mph"  %> 
+				</div>		
+			</div>	
+			
+		</div> 
+		
+		<div class="right">
+			<div id="map_canvas"> </div>
+		</div>
+		
+		<div id="start-end-coOrds" style="display: none;"> 
+			<%= serialize_latlong %> 
+		</div> 
+		
+		<div style="clear: both"> </div>
+		
+		<%= render :partial => 'cities'%>
+
+	</div>
+</div>

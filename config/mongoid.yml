@@ -1,0 +1,10 @@
+production:
+  sessions:
+    default:  
+      uri: <%= ENV['MONGOLAB_URI'] %>
+development:
+  sessions:
+    default:
+      database: sunny
+      hosts:
+        - localhost:27017

@@ -1,0 +1,2 @@
+module SunHelper
+end

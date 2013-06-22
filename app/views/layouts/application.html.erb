@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Sunny</title>
+		<%= favicon_link_tag %>
+
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>  
+		<%= csrf_meta_tags %>
+	  <script type="text/javascript"
+	    src="https://maps.googleapis.com/maps/api/js?key=INSERT_GOOGLE_MAPS_API_KEY_HERE&sensor=false">
+	  </script>	
+	</head>
+	<body>
+
+	<%= yield %>
+
+	<footer>
+		weather api - 
+		<a href="http://www.worldweatheronline.com">
+			world weather online</a>|
+		 background images -
+		<a href="http://www.morguefile.com">morgue file</a>
+		 Icons -
+		<a href="http://www.freedesign4.me">freedesign4me</a>		
+	</footer>
+	</body>
+	
+</html>

@@ -1,0 +1,44 @@
+<div class="data-table">
+	<div class="header">
+		we evaluated these cities ... 
+	</div>
+	<table class="table-displaylist">
+		<thead>				
+			<th class="th-displaylist"/>
+			<th class="th-displaylist"/>					
+			<th class="th-displaylist"/>					
+			<th class="th-displaylist"/>										
+			<th class="th-displaylist td-displaylist-number">
+				precipitation %
+			</th>
+			<th class="th-displaylist td-displaylist-number">humidity %</th>
+			<th class="th-displaylist td-displaylist-number">wind (mph)</th>
+		</thead>				
+		<% @cities_evaluated.each do |city|%>
+		<tr>
+			<td class="td-displaylist td-displaylist-icon">
+				<%= image_tag "weather_icons/tiny/#{city.weather_icon}" %> 
+			</td>					
+			<td class="td-displaylist">
+				<%= "#{city.location.city}, #{city.location.state_abbr}" %> 
+			</td>
+			<td class="td-displaylist">
+				<%= city.weatherDesc %> 
+			</td>					
+			<td class="td-displaylist">
+				<%= city.temp_f %><span> &#176;F </span>|
+				<%= city.temp_c %><span> &#176;C </span>
+			</td>
+			<td class="td-displaylist td-displaylist-number">
+				<%= city.precipitation %> 
+			</td>
+			<td class="td-displaylist td-displaylist-number">
+				<%= city.humidity %> 
+			</td>
+			<td class="td-displaylist td-displaylist-number">
+				<%= city.wind %> 
+			</td>																				
+		</tr>
+		<% end %>
+	</table>
+</div>

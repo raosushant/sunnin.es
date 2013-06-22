@@ -1,0 +1,203 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+.center {
+  width:960px;
+  height:100%;
+  margin:0 auto;
+  position: relative;
+}
+
+.zipcode_entry { 
+  position:fixed;
+  width:300px;
+  height:500px;
+  top:50%;
+  left:50%;
+  margin-left:-150px;
+}
+
+.big_input {
+  width: 100px;
+  margin: 0px 5px 0px 0px;
+  padding: 8px 5px 8px 10px;
+  height: 25px;
+  font: normal 19px/23px Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 7px -2px #000;
+}
+ 
+.btn-primary {
+  padding: 5px 10px;
+  background: #fefa2e;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72c152), color-stop(100%, #8d116c));
+  background: -webkit-linear-gradient(top, #fefa2e,#8d116c);
+  background: -moz-linear-gradient(top, #fefa2e,#8d116c);
+  background: -o-linear-gradient(top, #fefa2e,#8d116c);
+  background: -ms-linear-gradient(top, #fefa2e,#8d116c);
+  background: linear-gradient(top, #fefa2e,#8d116c);
+  border-color: #237c07;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.4);s
+} 
+
+.btn { 
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 28px;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+  -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;   
+  box-shadow: 1px 0px 1px #203891,0px 1px 1px #3852b1,2px 1px 1px #203891,1px 2px 1px #3852b1,3px 2px 1px #203891,2px 3px 1px #3852b1,4px 3px 1px #203891,3px 4px 1px #3852b1,5px 4px 1px #203891,4px 5px 1px #3852b1,6px 5px 1px #203891;  
+}
+
+div.transbox {
+  background-color: rgba(255,255,255,0.6);
+  padding-left: 30px;  
+}
+
+.left {
+  float:left;
+}
+
+.right {
+  float: right; 
+  padding: 30px 20px;
+}
+
+.location-time { 
+  padding: 30px 20px;
+  font-size: 16px;   
+  line-height: 22px;
+}
+
+#map_canvas { 
+  height: 340px; 
+  width: 400px; 
+  background-color: rgba(0,0,0,);
+}
+
+.weather-other { 
+  padding: 10px 20px;
+  font-size: 16px;   
+  line-height: 22px;  
+}
+
+.location-time .city {
+  font-size: 28px;  
+  line-height: 34px;
+  margin-left: -1px;
+}
+
+.weather{ 
+  width: 400px;
+  height: 150px;
+  padding-top: 10px;
+}
+
+.weather-icon{
+  float: left;
+  padding-right: 20px;
+}
+
+.weather-text { 
+  padding: 24px 10px;
+  font-size: 52px;
+  color: #212121;
+}
+
+.weather-text span{
+  vertical-align:100%;
+  font-size: 16px; 
+}
+
+.data-table { 
+  padding: 10px 20px;
+  padding-bottom: 100px;
+}
+
+.table-displaylist { 
+  border-spacing: 2px;
+  font-size: 12px;
+  width: 860px;
+  border-collapse: collapse;
+}
+
+.th-displaylist{
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 2px solid #434343;
+  padding: 6px 8px;    
+}
+
+.td-displaylist {
+  border-bottom: 1px solid #434343;
+  padding: 6px 8px;     
+}
+
+.td-displaylist-number{ 
+  text-align: right;
+}
+
+.footer {
+   
+}
+
+#cloudy-cites { 
+  margin-top: 20px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.6);  
+  text-align:center
+}
+
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  color: #5e5e5e;
+  height: 100%; margin: 0; padding: 0;
+  font-size: 14px;
+  margin: 0 0 100px; /* bottom = footer height */
+}
+
+html { 
+ background: url('/assets/background.png') no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ position: relative;
+ min-height: 100%;  
+}
